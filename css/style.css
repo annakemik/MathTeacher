@@ -7,29 +7,7 @@ html {
 *::after,
 *::before {
   box-sizing: inherit;
-}
-
-ul,
-ol {
   padding: 0;
-}
-
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-ul,
-ol,
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
   margin: 0;
 }
 
@@ -72,24 +50,31 @@ h3 {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 0 10px;
 }
 
+.nav-btn {
+  display: none;
+}
+
+.nav-close-icon {
+  display: none;
+}
 /****************************
 HEADER
 *****************************/
 
 .menu__list {
-  padding: 50px 0 50px;
+  padding: 50px 20px;
   display: flex;
   justify-content: space-evenly;
   font-size: 36px;
 }
 
 .menu__item {
-  margin-right: 90px;
+  margin-right: 50px;
   padding: 5px;
 }
 
@@ -106,6 +91,7 @@ HEADER
 
 .header {
   background-image: url(../images/Background.jpg);
+  background-color: #787f78;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -123,16 +109,18 @@ HEADER
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   min-height: calc(100vh - 152px);
   text-align: center;
 }
 
 .action__button {
   background-color: #f39237;
+  color: white;
   font-weight: 600;
   padding: 15px 0 15px;
   border-radius: 10px;
+  border-color: white;
   width: 270px;
   margin-bottom: 50px;
 }
@@ -154,7 +142,7 @@ ABOUT
 .about__content {
   display: flex;
   justify-content: center;
-  gap: 100px;
+  gap: 80px;
   margin-bottom: 90px;
 }
 
@@ -181,8 +169,7 @@ ABOUT
   font-size: 20px;
   line-height: 1.5;
   font-weight: 600;
-  max-width: 500px;
-  text-indent: 40px;
+  max-width: 640px;
 }
 
 .bio p {
@@ -258,17 +245,26 @@ PRICES
   display: flex;
   justify-content: center;
   gap: 50px;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
+}
+
+.locations {
+  position: relative;
 }
 
 .prices__list {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 1.5;
   background-color: #fff;
   border-radius: 10px;
   padding: 30px;
   position: relative;
+}
+
+.prices__lists li:first-child {
+  font-weight: 600;
+  text-decoration: underline;
 }
 
 .areas {
@@ -290,14 +286,13 @@ CONTACTS
 
 .contacts__content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .contacts__main {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  margin: 40px 0 0 160px;
 }
 
 .contacts__item {
@@ -368,7 +363,7 @@ REVIEWS
 .reviews {
   padding-top: 140px;
   text-align: center;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .slider {
